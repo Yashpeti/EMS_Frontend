@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = 'http://localhost:5000/api';
+const BASE = 'https://ems-backend-abp1w4f8m-yash31082006.vercel.app/api';
 
 const getHeaders = () => {
   const user = JSON.parse(localStorage.getItem('ems_user') || '{}');
