@@ -1,0 +1,51 @@
+.notice-page { max-width: 800px; }
+.page-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+.page-header h1 { font-size: 28px; font-weight: 800; }
+.page-header p { color: var(--muted); font-size: 14px; margin-top: 4px; }
+
+.btn-primary { background: var(--accent); color: white; border: none; padding: 10px 20px; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; transition: opacity 0.2s; }
+.btn-primary:hover { opacity: 0.85; }
+
+.notice-form-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+.notice-form-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 18px; }
+
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.form-group label { font-size: 12px; color: var(--muted); font-weight: 500; }
+.form-group input { background: var(--bg); border: 1px solid var(--border); border-radius: 9px; padding: 10px 12px; color: var(--text); font-size: 14px; outline: none; }
+.form-group input:focus { border-color: var(--accent); }
+
+.notice-textarea { background: var(--bg); border: 1px solid var(--border); border-radius: 9px; padding: 10px 12px; color: var(--text); font-size: 14px; outline: none; resize: vertical; font-family: 'DM Sans', sans-serif; width: 100%; }
+.notice-textarea:focus { border-color: var(--accent); }
+.notice-textarea::placeholder { color: var(--muted); }
+
+.form-check { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; font-size: 14px; color: var(--text); cursor: pointer; }
+.form-check input { width: 16px; height: 16px; cursor: pointer; accent-color: var(--accent); }
+
+.btn-post { background: var(--accent); color: white; border: none; padding: 11px 24px; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; transition: opacity 0.2s; }
+.btn-post:hover:not(:disabled) { opacity: 0.85; }
+.btn-post:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.loading-text { color: var(--muted); font-size: 14px; padding: 20px 0; }
+
+.no-notices { text-align: center; padding: 60px; color: var(--muted); }
+.no-notices span { font-size: 48px; display: block; margin-bottom: 12px; }
+
+.notices-list { display: flex; flex-direction: column; gap: 14px; }
+
+.notice-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; transition: border-color 0.2s; }
+.notice-card:hover { border-color: rgba(124,106,245,0.4); }
+.notice-card.important { border-color: rgba(245,166,35,0.5); background: rgba(245,166,35,0.04); }
+
+.notice-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+.notice-title-row { display: flex; flex-direction: column; gap: 6px; }
+
+.imp-badge { background: rgba(245,166,35,0.2); color: var(--accent2); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 6px; width: fit-content; }
+.notice-title { font-size: 17px; font-weight: 700; }
+
+.btn-del-notice { background: none; border: none; color: var(--muted); font-size: 16px; cursor: pointer; padding: 4px 8px; border-radius: 6px; }
+.btn-del-notice:hover { background: rgba(240,82,82,0.15); color: var(--danger); }
+
+.notice-message { color: var(--text); font-size: 14px; line-height: 1.7; margin-bottom: 14px; }
+
+.notice-footer { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); padding-top: 12px; border-top: 1px solid var(--border); }
+.notice-footer strong { color: var(--accent); }
