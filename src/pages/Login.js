@@ -75,7 +75,7 @@ const Login = ({ onLogin }) => {
 
   useEffect(() => {
     // fetch employees for register dropdown
-    fetch('http://localhost:5000/api/employees')
+    fetch('https://ems-backend-abp1w4f8m-yash31082006.vercel.app/api/employees')
       .then(r => r.json())
       .then(data => setEmployees(data))
       .catch(() => {});
